@@ -155,6 +155,7 @@ a[rel="tag"]:last-child {
 /* Contact Form */
 form {
   display: grid;
+  
 	padding: 2em 0;
 }
 
