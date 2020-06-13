@@ -1,7 +1,8 @@
 ---
-title: This is my first post
+title: This is my first post YA
 date: 2015-01-01T00:00:00.000Z
-company: John Appleseed
+author: John Appleseed
+company: Zomato
 summary: Why contemplating our mortality can be a powerful catalyst for change
 tags:
   - tech
