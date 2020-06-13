@@ -1,7 +1,6 @@
 ---
 title: This is my first post YA
 date: 2015-01-01T00:00:00.000Z
-author: John Appleseed
 company: Zomato
 summary: Why contemplating our mortality can be a powerful catalyst for change
 tags:
@@ -21,8 +20,9 @@ Capitalize on low hanging fruit to identify a ballpark value added activity to b
 ``` text/2-3
 // this is a command
 function myCommand() {
-	let counter = 0;
-	counter++;
+  let counter = 0;
+  counter++;
 }
 ```
+
 Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.

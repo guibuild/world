@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/experience.njk",
+  "permalink": "experience/{{ title | slug }}/index.html"
+}

@@ -12,7 +12,7 @@ Leverage agile frameworks to provide a robust synopsis for high level overviews.
 ```
 pre,
 code {
-	line-height: 1.5;
+  line-height: 1.5;
 }
 ```
 
