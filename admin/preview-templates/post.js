@@ -22,7 +22,7 @@ const Post = createClass({
                   )
                 }</time
               >
-              ${" by Author"}
+              ${" by Company"}
             </small>
           </p>
 

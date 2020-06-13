@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/company.njk",
+  "permalink": "companies/{{ name | slug }}/index.html"
+}

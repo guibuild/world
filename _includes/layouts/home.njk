@@ -2,9 +2,14 @@
 layout: layouts/base.njk
 section: home
 ---
-{% include "components/hero.njk" %}
 
+{% include "components/hero.njk" %}
 {% include "components/bio-intro.njk" %}
 
 {{ layoutContent | safe }}
+
+{% set postslist = collections.post %}
+{% include "components/latestpost.njk" %}
+
+experience
 

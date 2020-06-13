@@ -17,14 +17,24 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - label: "Post Author"
-        name: "author"
+      - label: "Post Company"
+        name: "company"
         widget: "relation"
-        collection: "authors"
+        collection: "companies"
         searchFields: ["name", "github"]
         valueField: "name"
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "experience" # Used in routes, e.g., /admin/collections/blog
+    label: "Professional experience" # Used in the UI
+    folder: "experience" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
   # Our pages e.g. About
   - name: "pages"
@@ -43,13 +53,14 @@ collections:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
       - { label: "Body", name: "body", widget: "markdown" }
-  # Authors
-  - name: "authors"
-    label: "Author"
-    folder: "authors"
+  # Companies
+  - name: "companies"
+    label: "Company"
+    folder: "companies"
     create: true
     slug: "{{fields.name}}"
     fields:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Email", name: "email", widget: "string"}
       - {label: "GitHub", name: "github", widget: "string"}
+  # Small intros on homepage
