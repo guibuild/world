@@ -1,7 +1,19 @@
 <section>
 	{% for post in postslist.slice(0,2) | reverse %}
 		<article{% if post.url == url %} data-current="current item"{% endif %}>
-			<h3>
+			{% if post.data.thumbnail %}
+				<a href="{{ post.url | url }}">
+					<figure>
+						<img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}">
+						{% if post.data.tag %}
+							<figcaption>{{ post.data.tag }}</figcaption>
+						{% endif %}
+					</figure>
+				</a>
+			{% else %}
+				upload image
+			{% endif %}
+			<h4>
 				<a href="{{ post.url | url }}">
 					{% if post.data.title %}
 						{{ post.data.title }}
@@ -9,9 +21,9 @@
 						Untitled
 					{% endif %}
 				</a>
-			</h3>
+			</h4>
 			{% if post.data.summary %}
-				<p>
+				<p class="paragraph-light">
 					{{ post.data.summary }}
 				</p>
 			{% endif %}

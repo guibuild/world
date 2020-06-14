@@ -25,6 +25,11 @@ collections:
         valueField: "name"
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - label: "Tags2"
+        name: "tags2"
+        widget: "select"
+        multiple: true
+        options: ["javascript", "PWA", "web apps", "choose me"]
       - { label: "Body", name: "body", widget: "markdown" }
   # Our pages e.g. About
   - name: "pages"
