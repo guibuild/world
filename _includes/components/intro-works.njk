@@ -1,0 +1,15 @@
+<div class="content">
+  <div class="row">
+    <div class="column-30 spacing-right ">
+      <h3>Works</h3>
+      <p class="paragraph-light">
+        My background in Computer Science allows me to design as well as develop products. These are a collection of design and coding projects I've done in the past.
+      </p>
+      <a href="#" class="button primary">See all works</a>
+    </div>
+    <div class="column-70 spacing-left ">
+      {% set postslist = collections.post %}
+      {% include "components/latestpost.njk" %}
+    </div>
+  </div>
+</div>

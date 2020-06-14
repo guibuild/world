@@ -4,17 +4,15 @@ section: home
 ---
 
 {% include "components/hero.njk" %}
-{% include "components/bio-intro.njk" %}
+
+{% include "components/intro-bio.njk" %}
+
+{% include "components/intro-experience.njk" %}
+
+{% include "components/intro-works.njk" %}
+
+{% include "components/intro-skills.njk" %}
 
 {{ layoutContent | safe }}
-
-{% set postslist = collections.post %}
-{% include "components/latestpost.njk" %}
-
-experience
-
-
-
-contact me
 
 {% include "components/form.njk" %}

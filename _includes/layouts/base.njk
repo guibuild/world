@@ -7,7 +7,12 @@
 
 		<header>
 			<em>
-				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
+				<a href="{{ '/' | url }}">
+					<span class="logo white">G</span>
+					<span class="logo green">U</span>
+					<span class="logo blue">I</span>
+					<span class="pageTitle">{{ metadata.title }}</span>
+				</a>
 			</em>
 			{% include "components/nav.njk" %}
 		</header>
@@ -18,6 +23,13 @@
 
 		{% include "components/footer.njk" %}
 
+
+		<script src="https://unpkg.com/@popperjs/core@2"></script>
+		<script src="https://unpkg.com/tippy.js@6"></script>
 	</body>
 
 </html>
+
+<h1 class="hi-there-heading">
+
+</h1>
