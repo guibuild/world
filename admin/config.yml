@@ -11,11 +11,14 @@ collections:
   # Our blog posts
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Post" # Used in the UI
+    hint: "Post here my projects. Ongoing projects should be added as draft."
     folder: "posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Thumbnail url", name: "thumbnail", widget: "string", hint: "Should be hosted on ImageKit, max-width:500px" }
+      - { label: "Cover image url", name: "coverimage", widget: "string", hint: "1500px" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - label: "Post Company"
         name: "company"
@@ -34,6 +37,7 @@ collections:
   # Our pages e.g. About
   - name: "pages"
     label: "Page"
+    hint: "Every page here. The homepage content shows on bottom. Rest are includes, for now."
     folder: "pages"
     create: false # Change to true to allow editors to create new pages
     slug: "{{slug}}"
